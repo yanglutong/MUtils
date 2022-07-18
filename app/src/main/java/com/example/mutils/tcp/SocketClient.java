@@ -10,7 +10,6 @@ import java.net.Socket;
  * @create: 2019-02-16 10:39
  **/
 public class SocketClient {
- 
     public static void main(String[] args) throws IOException {
         //服务端IP和端口 创建客户端服务端socket
         new Thread(new SocketClientWorker("127.0.0.1", 6666,"ClientA",5000,"A发送消息。。")).start();
